@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projekt_feladatnyilvantarto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Feladatok nyilvántartása" Height="500" Width="535">
     <Grid>
-        
+        <Label Content="Feladatok listája" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="96" Height="31"/>
+        <ListBox Name="feladatListaLb" HorizontalAlignment="Left" Height="211" Margin="10,41,0,0" VerticalAlignment="Top" Width="322"/>
+        <Label Content="Feladat szövege" HorizontalAlignment="Left" Margin="337,10,0,0" VerticalAlignment="Top" Width="130" Height="31"/>
+        <TextBox Name="feladatSzovTb" HorizontalAlignment="Left" Height="27" Margin="337,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
+        <Button Content="Új hozzáadása" HorizontalAlignment="Left" Margin="337,75,0,0" VerticalAlignment="Top" Width="165" Height="26"/>
+        <Button Content="Kijelölt feladat módosítása" HorizontalAlignment="Left" Margin="337,107,0,0" VerticalAlignment="Top" Width="165" Height="26"/>
+        <Button Content="Kijelölt feladat törlése" HorizontalAlignment="Left" Margin="337,139,0,0" VerticalAlignment="Top" Width="165" Height="26"/>
+        <Label Content="Törölt elemek" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" Width="87"/>
+        <ListBox Name="toroltFeladatListaLb" HorizontalAlignment="Left" Height="138" Margin="10,288,0,0" VerticalAlignment="Top" Width="322"/>
+        <Button Content="Kijelölt feladat visszaállítása" HorizontalAlignment="Left" Margin="337,288,0,0" VerticalAlignment="Top" Width="165"/>
+        <Button Content="Kijelölt feladat végleg törlése" HorizontalAlignment="Left" Margin="337,313,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Gellért M. fantasztikus kreálmánya @ 2021" HorizontalAlignment="Left" Margin="282,433,0,0" VerticalAlignment="Top"/>
+
+
     </Grid>
 </Window>
