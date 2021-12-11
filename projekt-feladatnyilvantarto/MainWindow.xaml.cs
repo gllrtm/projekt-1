@@ -54,8 +54,9 @@ namespace projekt_feladatnyilvantarto
 
         private void feladatListaLb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string kijeloltSzoveg = (string)feladatListaLb.SelectedItems[0];
-            feladatSzovTb.Text = kijeloltSzoveg;
+            
+                string kijeloltSzoveg = (string)feladatListaLb.SelectedItem;
+                feladatSzovTb.Text = kijeloltSzoveg;
 
         }
 
@@ -64,7 +65,8 @@ namespace projekt_feladatnyilvantarto
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
+            feladatListaLb.Items.Add(feladatSzovTb.Text);
+            feladatListaLb.Items.RemoveAt(feladatListaLb.Items.IndexOf(feladatListaLb.SelectedItem));
         }
 
 
@@ -87,6 +89,10 @@ namespace projekt_feladatnyilvantarto
         {
             toroltFeladatListaLb.Items.RemoveAt(toroltFeladatListaLb.Items.IndexOf(toroltFeladatListaLb.SelectedItem));
         }
+
+
+        //3. feladat
+
 
     }
 }
