@@ -24,5 +24,49 @@ namespace projekt_feladatnyilvantarto
         {
             InitializeComponent();
         }
+
+        //1.feladat
+
+        // a)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            feladatListaLb.Items.Add(feladatSzovTb.Text);
+            
+        }
+
+
+        // b)
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            while (feladatListaLb.SelectedItems.Count > 0)
+            {
+                string feladat = (string)feladatListaLb.SelectedItems[0];
+                toroltFeladatListaLb.Items.Add(feladat);
+                feladatListaLb.Items.Remove(feladat);
+            }
+            
+        }
+
+
+        //c)
+
+        private void feladatListaLb_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string kijeloltSzoveg = (string)feladatListaLb.SelectedItems[0];
+            feladatSzovTb.Text = kijeloltSzoveg;
+
+        }
+
+
+        // d)
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        
     }
 }
