@@ -67,6 +67,26 @@ namespace projekt_feladatnyilvantarto
             
         }
 
-        
+
+
+        //2. feladat
+
+        // a)
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            while (toroltFeladatListaLb.SelectedItems.Count > 0)
+            {
+                string feladat = (string)toroltFeladatListaLb.SelectedItems[0];
+                feladatListaLb.Items.Add(feladat);
+                toroltFeladatListaLb.Items.Remove(feladat);
+            }
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            toroltFeladatListaLb.Items.RemoveAt(toroltFeladatListaLb.Items.IndexOf(toroltFeladatListaLb.SelectedItem));
+        }
+
     }
 }

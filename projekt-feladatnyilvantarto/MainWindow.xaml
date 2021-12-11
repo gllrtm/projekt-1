@@ -16,8 +16,8 @@
         <Button Content="Kijelölt feladat törlése" HorizontalAlignment="Left" Margin="337,139,0,0" VerticalAlignment="Top" Width="165" Height="26" Click="Button_Click_1"/>
         <Label Content="Törölt elemek" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" Width="87"/>
         <ListBox Name="toroltFeladatListaLb" HorizontalAlignment="Left" Height="138" Margin="10,288,0,0" VerticalAlignment="Top" Width="322"/>
-        <Button Content="Kijelölt feladat visszaállítása" HorizontalAlignment="Left" Margin="337,288,0,0" VerticalAlignment="Top" Width="165"/>
-        <Button Content="Kijelölt feladat végleg törlése" HorizontalAlignment="Left" Margin="337,313,0,0" VerticalAlignment="Top" Width="165"/>
+        <Button Content="Kijelölt feladat visszaállítása" HorizontalAlignment="Left" Margin="337,288,0,0" VerticalAlignment="Top" Width="165" Click="Button_Click_3"/>
+        <Button Content="Kijelölt feladat végleg törlése" HorizontalAlignment="Left" Margin="337,313,0,0" VerticalAlignment="Top" Width="165" Click="Button_Click_4"/>
         <Label Content="Gellért M. nem olyan fantasztikus kreálmánya @ 2021" HorizontalAlignment="Left" Margin="222,431,0,0" VerticalAlignment="Top"/>
 
 
